@@ -14,4 +14,7 @@ switch ($argv[1]){
 }
 
 echo $console;
-echo "";
+?>
+
+;)
+:*
