@@ -1,7 +1,9 @@
 <?php
 
+define('DNA', BASEPATH."vendor/josewilsoncc/dna/");
+
 define('RESOURCES', BASEPATH . 'resources/');
-include './modules/orm.php';
+include DNA.'modules/orm.php';
 
 #START MUTANT
 global $blade;
