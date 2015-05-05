@@ -4,7 +4,7 @@
 
 <?php
 
-define('DNA', BASEPATH."vendor/josewilsoncc/dna/");
+define('DNA', "./vendor/josewilsoncc/dna/");
 
 //Total de argumentos: $argc
 
