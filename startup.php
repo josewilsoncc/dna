@@ -1,7 +1,6 @@
 <?php
 
 define('DNA', BASEPATH."vendor/josewilsoncc/dna/");
-
 define('RESOURCES', BASEPATH . 'resources/');
 
 include DNA.'modules/eloquent.php';
