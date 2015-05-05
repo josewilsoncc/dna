@@ -3,6 +3,6 @@
 define('DNA', BASEPATH."vendor/josewilsoncc/dna/");
 define('RESOURCES', BASEPATH . 'resources/');
 
-include DNA.'modules/eloquent.php';
-include DNA.'modules/blade.php';
-include DNA.'modules/i18n.php';
+require DNA.'modules/eloquent.php';
+require DNA.'modules/blade.php';
+require DNA.'modules/i18n.php';
