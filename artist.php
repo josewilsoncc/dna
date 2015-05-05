@@ -1,7 +1,7 @@
-**********************<br>
-* Artist for Mutant! *<br>
-**********************<br>
-<br>
+**********************
+* Artist for Mutant! *
+**********************
+
 <?php
 
 //Total de argumentos: $argc
@@ -13,4 +13,5 @@ switch ($argv[1]){
         break;
 }
 
-echo $console.'<br><br>';
+echo $console;
+echo "";
