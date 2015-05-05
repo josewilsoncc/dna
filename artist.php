@@ -1,12 +1,16 @@
+**********************<br>
+* Artist for Mutant! *<br>
+**********************<br>
+<br>
 <?php
 
 //Total de argumentos: $argc
 //echo var_dump($argv);
 
-switch ($argv[0]){
+switch ($argv[1]){
     case '-v':
         $console = "DNA Version: 2015.05.05";
         break;
 }
 
-echo $console;
+echo $console.'<br><br>';
