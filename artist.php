@@ -13,6 +13,7 @@ switch ($argv[1]){
         $console = "DNA Version: 2015.05.05";
         break;
     case 'mutate':
+        require "./system/config/config.php";
         require DNA.'artist/sql.php';
         break;
 }

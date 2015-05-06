@@ -2,12 +2,28 @@
 
 
 $config = new config();
+$dbhost = $config->data['dbhost'];
+$dbuser = $config->data['dbuser'];
+$dbpass = $config->data['dbpass'];
+$dbname = $config->data['dbname'];
 
-$mysqli = new mysqli($config->data['dbhost'], $config->data['dbuser'], $config->data['dbpass']);
-if ($mysqli->connect_errno) {
-    echo "Falló la conexión con MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-}
+echo " host: ".$dbhost;
+echo " user: ".$dbuser;
+echo " dbpass: ".$dbpass;
 
-if (!$mysqli->query("CREATE DATABASE ".$config->data['dbname'].";")) {
-    echo "Falló la creación de la base de datos: (" . $mysqli->errno . ") " . $mysqli->error;
+// Create connection
+
+// Check connection
+if (! $conn = @mysqli_connect($dbhost, $dbuser, $dbpass)) {
+    die("Connection failed: " . $conn->connect_error);
 }
+/*
+// Create database
+$sql = "CREATE DATABASE ".$dbname;
+if ($conn->query($sql) === TRUE) {
+    echo "Database created successfully";
+} else {
+    echo "Error creating database: " . $conn->error;
+}
+*/
+$conn->close();
