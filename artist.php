@@ -1,7 +1,3 @@
-**********************
-* Artist for Mutant! *
-**********************
-
 <?php
 
 define('DNA', "./vendor/josewilsoncc/dna/");
@@ -10,7 +6,16 @@ define('DNA', "./vendor/josewilsoncc/dna/");
 
 switch ($argv[1]){
     case '-v':
-        $console = "DNA Version: 2015.05.05";
+        ?>
+        **********************
+        * Artist for Mutant! *
+        **********************
+        : Date :   2015.05.05
+        + DNA      0.1.0
+        + Eloquent 5.0.28
+        + Blade    3.0
+        + I18n     2.6.6
+        <?php
         break;
     case 'mutate':
         require "./system/config/config.php";
