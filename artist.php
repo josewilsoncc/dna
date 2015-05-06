@@ -12,11 +12,12 @@ switch ($argv[1]){
         * Artist for Mutant! *
         **********************
         
-        : Date :   2015.05.05
-        + DNA      0.1.0
-        + Eloquent 5.0.28
-        + Blade    3.0
-        + I18n     2.6.6
+        : Date :   2015/05/06
+        
+        + DNA      == 0.1.0
+        + Eloquent >= 5.0.28
+        + Blade    >= 3.0
+        + I18n     >= 2.6.6
         
         **********************
         *      Colombia      *
