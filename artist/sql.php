@@ -10,6 +10,7 @@ $dbname = $config->data['dbname'];
 echo " host: ".$dbhost;
 echo " user: ".$dbuser;
 echo " dbpass: ".$dbpass;
+echo "Test";
 
 // Create connection
 
